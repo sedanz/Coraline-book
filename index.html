@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coraline</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-image: url("book/fond.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            font-family: 'Segoe UI';
+        }
+        .contenedor{
+            width: 80%; 
+            height: 100vh;
+            margin: auto; 
+            background-color: rgba(0, 0, 0, 0.562);
+            
+        }
+        .book{
+            width: 80%; 
+            height: 600px;
+            margin: auto; 
+            
+        }
+        .datos{
+            color: blanchedalmond;
+            width: 75%; 
+            margin: auto; 
+        }
+        .portada{
+            
+            min-width: 25%;
+            max-width: 30%;
+            float: left;
+            margin-right: 25px;
+        }
+        .download {
+            color: black;
+            background: #f12711;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #f5af19, #f12711);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #f5af19, #f12711); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+            border-radius: 60px;
+            width: 100px;
+            height: 30px;
+            text-align: center;
+            padding-top: 5px;
+            margin-top: 20px;
+            float: left;
+        }
+        .download a{
+            color: blanchedalmond;
+        }
+        .download:hover{
+            color: black;
+            background: #c31432;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #240b36, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <div itemscope itemtype = "https://schema.org/Book">
+            <div class="datos">
+                <h1 style="margin-bottom: 10px;" ><span itemprop = "name">Coraline</span> - <span itemprop = "author">Neil Gaiman</span></h1>
+                <div class="portada">
+                    <img src="/book/coraline.jpg" width="100%" alt="Coraline_Portada">
+                </div>
+                <p>
+                    <strong>Illustrador:</strong> <span itemprop ="illustrator">Dave McKean</span>
+                </p> 
+                <p>
+                    <strong>Idioma:</strong> <meta itemprop = "inLanguage" content = "es" />Español
+                </p>
+                <p>
+                    <strong>Año:</strong> <span itemprop = "copyrightYear" >2002</span>
+                </p>
+                <p>
+                    <strong>Genero:</strong><span itemprop = "genre" >Terror</span>
+                </p> 
+                <p>
+                    <strong>Paginas:</strong> <span itemprop ="numberOfPages" > 160</span>
+                </p> 
+                <h2>    
+                    Sinopsis
+                </h2> 
+                <p style="text-align: justify;" itemprop = "description">
+                    Coraline es una niña que al mudarse a un nuevo hogar descubre una pequeña puerta que la llevará a un mundo alternativo donde todo lo que desea se hace realidad. Pero todo tiene un precio, así que ella, junto con la ayuda de un gato, tendrá que buscar la manera de salir de ahí venciendo varios obstáculos que se encontrará en el camino y de paso salvar las almas de aquellos que se rindieron.
+                </br></br>Fue adaptada al cine en animación, de nombre "Coraline y la puerta secreta".
+            </p>
+            <div class="download">
+                <a href="/book/ccafe04ffbb6ca3cb7ad54a10c496439.pdf" target="_blank"><i class="fas fa-file-download"> Descargar</i></a>
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
